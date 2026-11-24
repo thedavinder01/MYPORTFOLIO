@@ -1,42 +1,52 @@
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080b12">
-  <meta name="description" content="Selected portfolio projects.">
+  <meta name="description" content="Selected projects by Davinder Singh.">
 
   <title>Projects — Davinder Singh</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   >
+
+  <!-- Main CSS -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Projects Page CSS (if using a separate file) -->
+  <!-- If you added Projects CSS inside style.css, remove the next line. -->
+  <!-- <link rel="stylesheet" href="css/projects.css"> -->
 </head>
 
 <body data-page="projects">
+
   <a class="skip-link" href="#projects">Skip to content</a>
 
+  <!-- TOPBAR -->
   <header class="topbar">
-    <a
-      class="brand"
-      href="index.html"
-      aria-label="Davinder Singh home"
-    >
+
+    <a class="brand" href="index.html" aria-label="Davinder Singh home">
       <span class="brand-mark">D<span>.</span></span>
       <span>DAVINDER SINGH</span>
     </a>
 
     <div class="top-actions">
+
       <span class="availability">
         <i></i>
         OPEN TO OPPORTUNITIES
       </span>
 
+      <!-- THEME PICKER -->
       <div class="theme-picker">
+
         <button
           class="palette-toggle"
           type="button"
@@ -50,6 +60,7 @@
         </button>
 
         <div class="palette-menu" role="menu" hidden>
+
           <button
             type="button"
             class="palette-option"
@@ -93,9 +104,11 @@
             <i></i>
             Coral
           </button>
+
         </div>
       </div>
 
+      <!-- THEME TOGGLE -->
       <button
         class="theme-toggle icon-button"
         type="button"
@@ -104,415 +117,559 @@
       >
         <span class="theme-icon">☼</span>
       </button>
+
     </div>
   </header>
 
+
+  <!-- MAIN CONTENT -->
   <main class="page-main">
-    <section
-      class="content-section section-wrap"
-      id="projects"
-    >
+
+    <section class="content-section section-wrap" id="projects">
+
+      <!-- SECTION HEADING -->
       <div class="section-heading reveal">
+
         <p class="eyebrow">03 — SELECTED WORK</p>
+
         <h2>
           Projects with
           <span class="gradient-text">purpose.</span>
         </h2>
-        <p>Add only work you can share and describe accurately.</p>
+
+        <p>
+          Exploring technology through software, cybersecurity,
+          embedded systems, automation and Python development.
+        </p>
+
       </div>
 
+
+      <!-- PROJECT FILTERS -->
       <div
         class="filter-row reveal"
         role="group"
         aria-label="Filter projects"
       >
-        <button class="filter-button active" data-filter="all">
-          All <span></span>
+
+        <button
+          class="filter-button active"
+          type="button"
+          data-filter="all"
+        >
+          All <span>10</span>
         </button>
-        <button class="filter-button" data-filter="web">
-          Web <span>01</span>
+
+        <button
+          class="filter-button"
+          type="button"
+          data-filter="web"
+        >
+          Web <span>02</span>
         </button>
-        <button class="filter-button" data-filter="design">
-          Embedded System <span >02 </span>
+
+        <button
+          class="filter-button"
+          type="button"
+          data-filter="embedded"
+        >
+          Embedded Systems <span>06</span>
         </button>
-        <button class="filter-button" data-filter="other">
-          Other <span>03</span>
+
+        <button
+          class="filter-button"
+          type="button"
+          data-filter="cybersecurity"
+        >
+          Cybersecurity <span>01</span>
         </button>
+
+        <button
+          class="filter-button"
+          type="button"
+          data-filter="python"
+        >
+          Python <span>01</span>
+        </button>
+
       </div>
 
+
+      <!-- PROJECT GRID -->
       <div class="project-grid">
+
+
+        <!-- WEB PROJECT 01 -->
         <article
           class="project-card glass reveal"
           data-category="web"
         >
-          <a
-            href="contact.html#contact"
+
+          
+           <a href="https://thedavinder01.github.io/Cloud-Base-Attence-System/"
+   target="_blank"
+   rel="noopener noreferrer"
             class="project-art art-blue"
-            aria-label="Discuss Project One"
+            aria-label="Discuss Cloud Attendance System"
           >
+
+            <img
+              src="assets/images/cloud.jpg"
+              alt="Cloud Attendance System project"
+              class="project-image"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            >
+
             <span class="art-label">PROJECT / 01</span>
-
-            <div class="mock-browser">
-              <div class="mock-dots">● ● ●</div>
-
-              <div class="mock-lines">
-                <i></i>
-                <i></i>
-                <i></i>
-              </div>
-
-              <div class="mock-orb"></div>
-            </div>
-
             <span class="art-arrow">↗</span>
+
           </a>
 
           <div class="project-info">
+
             <div>
-              <span class="mono">WEB · [YEAR]</span>
-              <h3>CLOUD BASE ATTENCE SYSTEM</h3>
+              <span class="mono">WEB · 2026</span>
+
+              <h3>CLOUD BASED ATTENDANCE SYSTEM</h3>
+
               <p>
-                Cloud-based system to track attendance online using QR codes with real-time updates and secure data storage.
+                Cloud-based attendance management system using QR
+                codes, real-time updates and secure data storage
+                to simplify attendance tracking.
               </p>
             </div>
 
             <span class="project-index">01</span>
+
           </div>
         </article>
+
+
+
+        <!-- WEB PROJECT 02 -->
         <article
           class="project-card glass reveal"
           data-category="web"
         >
+
           <a
             href="contact.html#contact"
             class="project-art art-blue"
-            aria-label="Discuss Project One"
+            aria-label="Discuss Broadcast Network System"
           >
+
+            <img
+              src="assets/images/Broad.jpeg"
+              alt="Broadcast Network System project"
+              class="project-image"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            >
+
+            <span class="art-label">PROJECT / 02</span>
+            <span class="art-arrow">↗</span>
+
+          </a>
+
+          <div class="project-info">
+
+            <div>
+              <span class="mono">WEB · 2026</span>
+
+              <h3>BROADCAST NETWORK SYSTEM</h3>
+
+              <p>
+                A centralized communication platform designed to
+                manage messages, notifications and files through
+                multiple communication channels.
+              </p>
+            </div>
+
+            <span class="project-index">02</span>
+
+          </div>
+        </article>
+
+
+
+        <!-- EMBEDDED PROJECT 01 -->
+        <article
+          class="project-card glass reveal"
+          data-category="embedded"
+        >
+
+          <a
+            href="contact.html#contact"
+            class="project-art art-purple"
+            aria-label="Discuss RFID Attendance System"
+          >
+
+            <img
+              src="assets/images/RFID.JPG"
+              alt="RFID Attendance System"
+              class="project-image"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            >
+
             <span class="art-label">PROJECT / 01</span>
-
-            <div class="mock-browser">
-              <div class="mock-dots">● ● ●</div>
-
-              <div class="mock-lines">
-                <i></i>
-                <i></i>
-                <i></i>
-              </div>
-
-              <div class="mock-orb"></div>
-            </div>
-
             <span class="art-arrow">↗</span>
+
           </a>
 
           <div class="project-info">
+
             <div>
-              <span class="mono">WEB · [YEAR]</span>
-              <h3>BROADCASTE NETWORK SYSTEM </h3>
+              <span class="mono">EMBEDDED · 2026</span>
+
+              <h3>RFID ATTENDANCE SYSTEM</h3>
+
               <p>
-             A CENTRALIZED PLATFORM TO SEND MESSAGES, NOTIFICATIONS, AND FILES THROUGH WHATSAPP, EMAIL, AND SMS USING A SINGLE WEBSITE. </p>
-            </div>
-
-            <span class="project-index">01</span>
-          </div>
-        </article>
-<article class="project-card glass reveal" data-category="web">
-    <a href="contact.html#contact"
-       class="project-art art-blue"
-       aria-label="Broadcast Network System">
-
-        <span class="art-label">PROJECT / 02</span>
-
-        <div class="mock-browser">
-            <div class="mock-dots">● ● ●</div>
-            <div class="mock-lines">
-                <i></i>
-                <i></i>
-                <i></i>
-            </div>
-            <div class="mock-orb"></div>
-        </div>
-
-        <span class="art-arrow">↗</span>
-    </a>
-
-    <div class="project-info">
-        <div>
-            <span class="mono">WEB · 2026</span>
-            <h3>BROADCAST NETWORK SYSTEM</h3>
-            <p>
-                A centralized platform to send messages,
-                notifications, and files through WhatsApp,
-                Email, and SMS using a single website.
-            </p>
-        </div>
-
-        <span class="project-index">02</span>
-    </div>
-</article>
-        <article
-          class="project-card glass reveal"
-          data-category="Embedded System "
-        >
-          <a
-            href="contact.html#contact"
-            class="project-art art-purple"
-            aria-label="Discuss Project Two"
-          >
-            <span class="art-label">PROJECT / 02</span>
-
-            <div class="design-shape">
-              <span>✳</span>
-              <i></i>
-            </div>
-
-            <span class="art-arrow">↗</span>
-          </a>
-
-          <div class="project-info">
-            <div>
-              <span class="mono">RFID [JULY-2026] </span>
-              <h3>RFID ATTENCE SYSTEM </h3>
-              <p>
-                RFID-BASED ATTENDANCE SYSTEM USING RFID CARDS TO IDENTIFY USERS AND AUTOMATICALLY RECORD ATTENDANCE WITH REAL-TIME UPDATES.
-              </p>
-            </div>
-
-            <span class="project-index">02</span>
-          </div>
-        </article>
-   <article
-          class="project-card glass reveal"
-          data-category="Embedded System "
-        >
-          <a
-            href="contact.html#contact"
-            class="project-art art-purple"
-            aria-label="Discuss Project Two"
-          >
-            <span class="art-label">PROJECT / 02</span>
-
-            <div class="design-shape">
-              <span>✳</span>
-              <i></i>
-            </div>
-
-            <span class="art-arrow">↗</span>
-          </a>
-
-          <div class="project-info">
-            <div>
-              <span class="mono">RFID [JULY-2026] </span>
-              <h3>RFID ATTENCE SYSTEM </h3>
-              <p>
-                RFID-BASED ATTENDANCE SYSTEM USING RFID CARDS TO IDENTIFY USERS AND AUTOMATICALLY RECORD ATTENDANCE WITH REAL-TIME UPDATES.
-              </p>
-            </div>
-
-            <span class="project-index">02</span>
-          </div>
-        </article>
-           <article
-          class="project-card glass reveal"
-          data-category="Embedded System "
-        >
-          <a
-            href="contact.html#contact"
-            class="project-art art-purple"
-            aria-label="Discuss Project Two"
-          >
-            <span class="art-label">PROJECT / 02</span>
-
-            <div class="design-shape">
-              <span>✳</span>
-              <i></i>
-            </div>
-
-            <span class="art-arrow">↗</span>
-          </a>
-
-          <div class="project-info">
-            <div>
-              <span class="mono">RFID [JULY-2026] </span>
-              <h3>RFID ATTENCE SYSTEM </h3>
-              <p>
-                RFID-BASED ATTENDANCE SYSTEM USING RFID CARDS TO IDENTIFY USERS AND AUTOMATICALLY RECORD ATTENDANCE WITH REAL-TIME UPDATES.
-              </p>
-            </div>
-
-            <span class="project-index">02</span>
-          </div>
-        </article>
-           <article
-          class="project-card glass reveal"
-          data-category="Embedded System "
-        >
-          <a
-            href="contact.html#contact"
-            class="project-art art-purple"
-            aria-label="Discuss Project Two"
-          >
-            <span class="art-label">PROJECT / 02</span>
-
-            <div class="design-shape">
-              <span>✳</span>
-              <i></i>
-            </div>
-
-            <span class="art-arrow">↗</span>
-          </a>
-
-          <div class="project-info">
-            <div>
-              <span class="mono">RFID [JULY-2026] </span>
-              <h3>RFID ATTENCE SYSTEM </h3>
-              <p>
-                RFID-BASED ATTENDANCE SYSTEM USING RFID CARDS TO IDENTIFY USERS AND AUTOMATICALLY RECORD ATTENDANCE WITH REAL-TIME UPDATES.
-              </p>
-            </div>
-
-            <span class="project-index">02</span>
-          </div>
-        </article>
-           <article
-          class="project-card glass reveal"
-          data-category="Embedded System "
-        >
-          <a
-            href="contact.html#contact"
-            class="project-art art-purple"
-            aria-label="Discuss Project Two"
-          >
-            <span class="art-label">PROJECT / 02</span>
-
-            <div class="design-shape">
-              <span>✳</span>
-              <i></i>
-            </div>
-
-            <span class="art-arrow">↗</span>
-          </a>
-
-          <div class="project-info">
-            <div>
-              <span class="mono">RFID [JULY-2026] </span>
-              <h3>RFID ATTENCE SYSTEM </h3>
-              <p>
-                RFID-BASED ATTENDANCE SYSTEM USING RFID CARDS TO IDENTIFY USERS AND AUTOMATICALLY RECORD ATTENDANCE WITH REAL-TIME UPDATES.
-              </p>
-            </div>
-
-            <span class="project-index">02</span>
-          </div>
-        </article>
-           <article
-          class="project-card glass reveal"
-          data-category="Embedded System "
-        >
-          <a
-            href="contact.html#contact"
-            class="project-art art-purple"
-            aria-label="Discuss Project Two"
-          >
-            <span class="art-label">PROJECT / 02</span>
-
-            <div class="design-shape">
-              <span>✳</span>
-              <i></i>
-            </div>
-
-            <span class="art-arrow">↗</span>
-          </a>
-
-          <div class="project-info">
-            <div>
-              <span class="mono">RFID [JULY-2026] </span>
-              <h3>RFID ATTENCE SYSTEM </h3>
-              <p>
-                RFID-BASED ATTENDANCE SYSTEM USING RFID CARDS TO IDENTIFY USERS AND AUTOMATICALLY RECORD ATTENDANCE WITH REAL-TIME UPDATES.
-              </p>
-            </div>
-
-            <span class="project-index">02</span>
-          </div>
-        </article>
-           <article
-          class="project-card glass reveal"
-          data-category="Embedded System "
-        >
-          <a
-            href="contact.html#contact"
-            class="project-art art-purple"
-            aria-label="Discuss Project Two"
-          >
-            <span class="art-label">PROJECT / 02</span>
-
-            <div class="design-shape">
-              <span>✳</span>
-              <i></i>
-            </div>
-
-            <span class="art-arrow">↗</span>
-          </a>
-
-          <div class="project-info">
-            <div>
-              <span class="mono">RFID [JULY-2026] </span>
-              <h3>RFID ATTENCE SYSTEM </h3>
-              <p>
-                RFID-BASED ATTENDANCE SYSTEM USING RFID CARDS TO IDENTIFY USERS AND AUTOMATICALLY RECORD ATTENDANCE WITH REAL-TIME UPDATES.
-              </p>
-            </div>
-
-            <span class="project-index">02</span>
-          </div>
-        </article>
-        <article
-          class="project-card glass reveal"
-          data-category="other"
-        >
-          <a
-            href="contact.html#contact"
-            class="project-art art-green"
-            aria-label="Discuss Project Three"
-          >
-            <span class="art-label">PROJECT / 03</span>
-
-            <div class="code-card">
-              <span>01</span>
-              <b>// make it useful</b>
-              <br>
-
-              <span>02</span>
-              <em>const</em>
-              idea =
-              <strong>"[Your idea]"</strong>
-              <br>
-
-              <span>03</span>
-              <i>build(idea);</i>
-            </div>
-
-            <span class="art-arrow">↗</span>
-          </a>
-
-          <div class="project-info">
-            <div>
-              <span class="mono">[CATEGORY] · [YEAR]</span>
-              <h3>[Project title three]</h3>
-              <p>
-                Describe the problem, your contribution, and the outcome.
+                RFID-based attendance system using Arduino and
+                RC522 RFID reader to identify users, display
+                attendance information and provide buzzer feedback.
               </p>
             </div>
 
             <span class="project-index">03</span>
+
           </div>
         </article>
+
+
+
+        <!-- EMBEDDED PROJECT 02 -->
+        <article
+          class="project-card glass reveal"
+          data-category="embedded"
+        >
+
+          <a
+            href="contact.html#contact"
+            class="project-art art-purple"
+            aria-label="Discuss AI Gesture Control Robot"
+          >
+
+            <img
+              src="assets/images/Gesture.jpeg"
+              alt="AI Gesture Control Robot"
+              class="project-image"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            >
+
+            <span class="art-label">PROJECT / 02</span>
+            <span class="art-arrow">↗</span>
+
+          </a>
+
+          <div class="project-info">
+
+            <div>
+              <span class="mono">ROBOTICS · 2026</span>
+
+              <h3>AI GESTURE CONTROL ROBOT</h3>
+
+              <p>
+                Gesture-controlled robotic system exploring
+                human-machine interaction through hand gestures,
+                embedded hardware and intelligent control.
+              </p>
+            </div>
+
+            <span class="project-index">04</span>
+
+          </div>
+        </article>
+
+
+
+        <!-- EMBEDDED PROJECT 03 -->
+        <article
+          class="project-card glass reveal"
+          data-category="embedded"
+        >
+
+          <a
+            href="contact.html#contact"
+            class="project-art art-purple"
+            aria-label="Discuss Fire Fighting Robot"
+          >
+
+            <img
+              src="assets/images/fire.jpeg"
+              alt="Fire Fighting Robot"
+              class="project-image"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            >
+
+            <span class="art-label">PROJECT / 03</span>
+            <span class="art-arrow">↗</span>
+
+          </a>
+
+          <div class="project-info">
+
+            <div>
+              <span class="mono">ARDUINO · 2026</span>
+
+              <h3>FIRE FIGHTING ROBOT</h3>
+
+              <p>
+                Arduino-based robotic system designed to detect
+                fire and assist in fire suppression using sensors,
+                motors and a water pump.
+              </p>
+            </div>
+
+            <span class="project-index">05</span>
+
+          </div>
+        </article>
+
+
+
+        <!-- EMBEDDED PROJECT 04 -->
+        <article
+          class="project-card glass reveal"
+          data-category="embedded"
+        >
+
+          <a
+            href="contact.html#contact"
+            class="project-art art-purple"
+            aria-label="Discuss Star Delta Starter"
+          >
+
+            <img
+              src="assets/images/STAR.jpeg"
+              alt="Star Delta Starter project"
+              class="project-image"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            >
+
+            <span class="art-label">PROJECT / 04</span>
+            <span class="art-arrow">↗</span>
+
+          </a>
+
+          <div class="project-info">
+
+            <div>
+              <span class="mono">ELECTRICAL · 2026</span>
+
+              <h3>STAR-DELTA STARTER</h3>
+
+              <p>
+                Motor starting control project demonstrating
+                star-delta switching for reducing starting current
+                in three-phase induction motors.
+              </p>
+            </div>
+
+            <span class="project-index">06</span>
+
+          </div>
+        </article>
+
+
+
+        <!-- EMBEDDED PROJECT 05 -->
+        <article
+          class="project-card glass reveal"
+          data-category="embedded"
+        >
+
+          <a
+            href="contact.html#contact"
+            class="project-art art-purple"
+            aria-label="Discuss DOL Starter"
+          >
+
+            <img
+              src="assets/images/dol-starter.jpg"
+              alt="DOL Starter project"
+              class="project-image"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            >
+
+            <span class="art-label">PROJECT / 05</span>
+            <span class="art-arrow">↗</span>
+
+          </a>
+
+          <div class="project-info">
+
+            <div>
+              <span class="mono">ELECTRICAL · 2026</span>
+
+              <h3>DOL STARTER</h3>
+
+              <p>
+                Direct-on-line motor starter project demonstrating
+                basic motor control, switching and electrical
+                protection concepts.
+              </p>
+            </div>
+
+            <span class="project-index">07</span>
+
+          </div>
+        </article>
+
+
+
+        <!-- EMBEDDED PROJECT 06 -->
+        <article
+          class="project-card glass reveal"
+          data-category="embedded"
+        >
+
+          <a
+            href="contact.html#contact"
+            class="project-art art-purple"
+            aria-label="Discuss Robotic Arm"
+          >
+
+            <img
+              src="assets/images/robotic-arm.jpg"
+              alt="Robotic Arm project"
+              class="project-image"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            >
+
+            <span class="art-label">PROJECT / 06</span>
+            <span class="art-arrow">↗</span>
+
+          </a>
+
+          <div class="project-info">
+
+            <div>
+              <span class="mono">ROBOTICS · 2026</span>
+
+              <h3>ROBOTIC ARM</h3>
+
+              <p>
+                Robotic arm project focused on controlled movement,
+                mechanical design and electronic control for
+                automated object handling.
+              </p>
+            </div>
+
+            <span class="project-index">08</span>
+
+          </div>
+        </article>
+
+
+
+        <!-- CYBERSECURITY PROJECT 01 -->
+        
+
+
+        <!-- PYTHON PROJECT 01 -->
+        <article
+          class="project-card glass reveal"
+          data-category="python"
+        >
+
+          <a
+            href="contact.html#contact"
+            class="project-art art-green"
+            aria-label="Discuss Soldier Secure Communication System"
+          >
+
+            <img
+              src="assets/images/secure.jpeg"
+              alt="Soldier Secure Communication System"
+              class="project-image"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            >
+
+            <span class="art-label">PROJECT / 01</span>
+            <span class="art-arrow">↗</span>
+
+          </a>
+
+          <div class="project-info">
+
+            <div>
+              <span class="mono">PYTHON · 2026</span>
+
+              <h3>SOLDIER SECURE COMMUNICATION SYSTEM</h3>
+
+              <p>
+                Python-based secure communication project concept
+                focused on protected information exchange and
+                secure communication for defence applications.
+              </p>
+            </div>
+
+            <span class="project-index">09</span>
+
+          </div>
+        </article>
+<article
+          class="project-card glass reveal"
+          data-category="cybersecurity"
+        >
+            <a href="https://thedavinder01.github.io/RUSTSCAN-BASED-NETWORK-PORT-SCANNER/"
+   target="_blank"
+   rel="noopener noreferrer"
+            class="project-art art-green"
+            aria-label="Discuss RustScan Based Network Port Scanner"
+          >
+
+            <img
+              src="assets/images/rustscan.jpg"
+              alt="RustScan Based Network Port Scanner project"
+              class="project-image"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            >
+
+            <span class="art-label">PROJECT / 01</span>
+            <span class="art-arrow">↗</span>
+
+          </a>
+
+          <div class="project-info">
+
+            <div>
+              <span class="mono">CYBERSECURITY · 2026</span>
+
+              <h3>RUSTSCAN-BASED NETWORK PORT SCANNER</h3>
+
+              <p>
+                A Python-based network reconnaissance project that uses
+                RustScan to identify open TCP ports on authorized targets
+                and supports follow-up service analysis for security
+                assessment and network auditing.
+              </p>
+            </div>
+
+            <span class="project-index">10</span>
+
+          </div>
+        </article>
+
+
       </div>
     </section>
   </main>
 
+
+
+  <!-- FOOTER -->
   <footer class="footer">
+
     <a class="brand" href="index.html">
       <span class="brand-mark">D<span>.</span></span>
       <span>DAVINDER SINGH</span>
@@ -523,141 +680,87 @@
       <span id="year"></span>
     </span>
 
-    <a href="#top" class="mono back-top">BACK TO TOP ↑</a>
+    <a href="#top" class="mono back-top">
+      BACK TO TOP ↑
+    </a>
+
   </footer>
 
+
+
+  <!-- BOTTOM NAVIGATION -->
   <nav class="bottom-nav" aria-label="Main navigation">
-    <a
-      href="index.html"
-      class="nav-link"
-      data-page="home"
-      aria-label="Home"
-    >
+
+    <a href="index.html" class="nav-link" data-page="home" aria-label="Home">
       <span>⌂</span>
       <small>Home</small>
     </a>
 
-    <a
-      href="about.html"
-      class="nav-link"
-      data-page="about"
-      aria-label="About"
-    >
+    <a href="about.html" class="nav-link" data-page="about" aria-label="About">
       <span>◉</span>
       <small>About</small>
     </a>
 
-    <a
-      href="skills.html"
-      class="nav-link"
-      data-page="skills"
-      aria-label="Skills"
-    >
+    <a href="skills.html" class="nav-link" data-page="skills" aria-label="Skills">
       <span>✳</span>
       <small>Skills</small>
     </a>
 
-    <a
-      href="projects.html"
-      class="nav-link"
-      data-page="projects"
-      aria-label="Projects"
-    >
+    <a href="projects.html" class="nav-link" data-page="projects" aria-label="Projects">
       <span>▦</span>
       <small>Projects</small>
     </a>
 
-    <a
-      href="services.html"
-      class="nav-link"
-      data-page="services"
-      aria-label="Services"
-    >
+    <a href="services.html" class="nav-link" data-page="services" aria-label="Services">
       <span>✧</span>
       <small>Services</small>
     </a>
 
-    <a
-      href="product.html"
-      class="nav-link"
-      data-page="product"
-      aria-label="Product"
-    >
+    <a href="product.html" class="nav-link" data-page="product" aria-label="Product">
       <span>▣</span>
       <small>Product</small>
     </a>
 
-    <a
-      href="experience.html"
-      class="nav-link"
-      data-page="experience"
-      aria-label="Experience"
-    >
+    <a href="experience.html" class="nav-link" data-page="experience" aria-label="Experience">
       <span>↗</span>
       <small>Experience</small>
     </a>
 
-    <a
-      href="internships.html"
-      class="nav-link"
-      data-page="internships"
-      aria-label="Internships"
-    >
+    <a href="internships.html" class="nav-link" data-page="internships" aria-label="Internships">
       <span>⌁</span>
       <small>Internships</small>
     </a>
 
-    <a
-      href="education.html"
-      class="nav-link"
-      data-page="education"
-      aria-label="Education"
-    >
+    <a href="education.html" class="nav-link" data-page="education" aria-label="Education">
       <span>⌑</span>
       <small>Education</small>
     </a>
 
-    <a
-      href="certifications.html"
-      class="nav-link"
-      data-page="certifications"
-      aria-label="Certs"
-    >
+    <a href="certifications.html" class="nav-link" data-page="certifications" aria-label="Certs">
       <span>◇</span>
       <small>Certs</small>
     </a>
 
-    <a
-      href="achievements.html"
-      class="nav-link"
-      data-page="achievements"
-      aria-label="Awards"
-    >
+    <a href="achievements.html" class="nav-link" data-page="achievements" aria-label="Awards">
       <span>✦</span>
       <small>Awards</small>
     </a>
 
-    <a
-      href="gallery.html"
-      class="nav-link"
-      data-page="gallery"
-      aria-label="Gallery"
-    >
+    <a href="gallery.html" class="nav-link" data-page="gallery" aria-label="Gallery">
       <span>▧</span>
       <small>Gallery</small>
     </a>
 
-    <a
-      href="contact.html"
-      class="nav-link"
-      data-page="contact"
-      aria-label="Contact"
-    >
+    <a href="contact.html" class="nav-link" data-page="contact" aria-label="Contact">
       <span>✉</span>
       <small>Contact</small>
     </a>
+
   </nav>
 
+
+  <!-- MAIN JAVASCRIPT -->
   <script src="js/main.js"></script>
+
 </body>
 </html>
