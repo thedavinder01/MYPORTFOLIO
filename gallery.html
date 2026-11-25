@@ -1,0 +1,281 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b12">
+  <meta name="description" content="Personal photo gallery of Davinder Singh.">
+
+  <title>My Gallery — Davinder Singh</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="gallery">
+
+  <a class="skip-link" href="#gallery">Skip to content</a>
+
+  <!-- HEADER -->
+
+  <header class="topbar">
+
+    <a class="brand" href="index.html" aria-label="Davinder Singh home">
+      <span class="brand-mark">D<span>.</span></span>
+      <span>DAVINDER SINGH</span>
+    </a>
+
+    <div class="top-actions">
+
+      <span class="availability">
+        <i></i>
+        OPEN TO OPPORTUNITIES
+      </span>
+
+      <div class="theme-picker">
+
+        <button class="palette-toggle" type="button" aria-haspopup="menu" aria-expanded="false">
+          <span class="palette-toggle-swatch"></span>
+          <span class="palette-current-name">Neon</span>
+          <span>⌄</span>
+        </button>
+
+        <div class="palette-menu" role="menu" hidden>
+
+          <button type="button" class="palette-option" role="menuitemradio" data-palette-choice="neon">
+            <i></i> Neon
+          </button>
+
+          <button type="button" class="palette-option" role="menuitemradio" data-palette-choice="aurora">
+            <i></i> Aurora
+          </button>
+
+          <button type="button" class="palette-option" role="menuitemradio" data-palette-choice="violet">
+            <i></i> Violet
+          </button>
+
+          <button type="button" class="palette-option" role="menuitemradio" data-palette-choice="coral">
+            <i></i> Coral
+          </button>
+
+        </div>
+      </div>
+
+      <button class="theme-toggle icon-button" type="button" aria-label="Switch theme">
+        <span class="theme-icon">☼</span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- MAIN -->
+
+  <main class="page-main">
+
+    <section class="content-section section-wrap gallery-section" id="gallery">
+
+      <div class="section-heading reveal">
+
+        <p class="eyebrow">12 — MY GALLERY</p>
+
+        <h2>
+          My Personal
+          <span class="gradient-text">Gallery.</span>
+        </h2>
+
+        <p>
+          A collection of personal photographs, experiences
+          and memorable moments.
+        </p>
+
+      </div>
+
+      <!-- GALLERY INFO -->
+
+      <div class="gallery-personal-info">
+
+        <span class="mono">PERSONAL PHOTOGRAPHS</span>
+
+        <span class="mono">
+          <span id="total-images">00</span> PHOTOS
+        </span>
+
+      </div>
+
+      <!-- PHOTO GRID -->
+
+      <div class="gallery-grid" id="gallery-grid">
+
+            <!-- PERSONAL PHOTO 02 -->
+
+        <button
+          class="gallery-item"
+          type="button"
+          data-title="Personal Photo 02"
+        >
+          <img
+            src="assets/images/college.jpeg"
+            alt="Personal Photo 02"
+            loading="lazy"
+          >
+
+          <span class="gallery-item-info">
+            <span>PERSONAL / 01</span>
+            <span>↗</span>
+          </span>
+        </button>
+
+        <!-- PERSONAL PHOTO 03 -->
+
+        <button
+          class="gallery-item"
+          type="button"
+          data-title="Personal Photo 03"
+        >
+          <img
+            src="assets/images/award.jpeg"
+            alt="Personal Photo 03"
+            loading="lazy"
+          >
+
+          <span class="gallery-item-info">
+            <span>PERSONAL / 02</span>
+            <span>↗</span>
+          </span>
+        </button>
+
+        <!-- ADD MORE PERSONAL PHOTOS HERE -->
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX -->
+
+  <dialog class="gallery-lightbox" id="gallery-lightbox">
+
+    <div class="lightbox-top">
+
+      <span class="mono" id="lightbox-title">PERSONAL PHOTO</span>
+
+    
+    </div>
+
+    <div class="lightbox-image-wrap">
+
+      <img
+        class="lightbox-image"
+        id="lightbox-image"
+        src=""
+        alt="Personal photograph"
+      >
+
+    </div>
+
+    <div class="lightbox-bottom">
+
+      <span class="mono" id="lightbox-counter">01 / 01</span>
+
+      <div class="lightbox-navigation">
+
+        <button id="previous-image" type="button">← Previous</button>
+
+        <button id="next-image" type="button">Next →</button>
+
+        <a class="lightbox-download" id="download-image" href="#" download>
+          Download ↓
+        </a>
+
+      </div>
+
+    </div>
+
+  </dialog>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    <a class="brand" href="index.html">
+      <span class="brand-mark">D<span>.</span></span>
+      <span>DAVINDER SINGH</span>
+    </a>
+
+    <span class="mono">
+      MADE WITH INTENTION · ©
+      <span id="year"></span>
+    </span>
+
+    <a href="#gallery" class="mono back-top">BACK TO TOP ↑</a>
+
+  </footer>
+
+  <!-- BOTTOM NAVIGATION -->
+
+  <nav class="bottom-nav" aria-label="Main navigation">
+
+    <a href="index.html" class="nav-link" data-page="home">
+      <span>⌂</span><small>Home</small>
+    </a>
+
+    <a href="about.html" class="nav-link" data-page="about">
+      <span>◉</span><small>About</small>
+    </a>
+
+    <a href="skills.html" class="nav-link" data-page="skills">
+      <span>✳</span><small>Skills</small>
+    </a>
+
+    <a href="projects.html" class="nav-link" data-page="projects">
+      <span>▦</span><small>Projects</small>
+    </a>
+
+    <a href="services.html" class="nav-link" data-page="services">
+      <span>✧</span><small>Services</small>
+    </a>
+
+    <a href="product.html" class="nav-link" data-page="product">
+      <span>▣</span><small>Product</small>
+    </a>
+
+    <a href="experience.html" class="nav-link" data-page="experience">
+      <span>↗</span><small>Experience</small>
+    </a>
+
+    <a href="internships.html" class="nav-link" data-page="internships">
+      <span>⌁</span><small>Internships</small>
+    </a>
+
+    <a href="education.html" class="nav-link" data-page="education">
+      <span>⌑</span><small>Education</small>
+    </a>
+
+    <a href="certifications.html" class="nav-link" data-page="certifications">
+      <span>◇</span><small>Certs</small>
+    </a>
+
+    <a href="achievements.html" class="nav-link" data-page="achievements">
+      <span>✦</span><small>Awards</small>
+    </a>
+
+    <a href="gallery.html" class="nav-link" data-page="gallery">
+      <span>▧</span><small>Gallery</small>
+    </a>
+
+    <a href="contact.html" class="nav-link" data-page="contact">
+      <span>✉</span><small>Contact</small>
+    </a>
+
+  </nav>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
