@@ -1312,3 +1312,37 @@ body.light-theme .certificate-image {
         min-height: 230px !important;
     }
 }
+.gallery-item {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.gallery-card::before,
+.gallery-card::after {
+    display: none !important;
+}
+
+.gallery-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Remove unwanted horizontal line from gallery photos */
+
+.gallery-item::before,
+.gallery-item::after {
+    display: none !important;
+    content: none !important;
+}
+
+.gallery-item-info {
+    border-top: none !important;
+    outline: none !important;
+}
+
+.gallery-item img {
+    display: block;
+    border: none !important;
+    outline: none !important;
+}

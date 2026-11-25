@@ -1,5 +1,7 @@
+
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,33 +12,37 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   >
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body data-page="contact">
+
   <a class="skip-link" href="#contact">Skip to content</a>
 
+  <!-- HEADER -->
+
   <header class="topbar">
-    <a
-      class="brand"
-      href="index.html"
-      aria-label="Davinder Singh home"
-    >
+
+    <a class="brand" href="index.html" aria-label="Davinder Singh home">
       <span class="brand-mark">D<span>.</span></span>
       <span>DAVINDER SINGH</span>
     </a>
 
     <div class="top-actions">
+
       <span class="availability">
         <i></i>
         OPEN TO OPPORTUNITIES
       </span>
 
       <div class="theme-picker">
+
         <button
           class="palette-toggle"
           type="button"
@@ -50,49 +56,31 @@
         </button>
 
         <div class="palette-menu" role="menu" hidden>
-          <button
-            type="button"
-            class="palette-option"
-            role="menuitemradio"
-            aria-checked="false"
-            data-palette-choice="neon"
-          >
-            <i></i>
-            Neon
+
+          <button type="button" class="palette-option"
+            role="menuitemradio" aria-checked="false"
+            data-palette-choice="neon">
+            <i></i> Neon
           </button>
 
-          <button
-            type="button"
-            class="palette-option"
-            role="menuitemradio"
-            aria-checked="false"
-            data-palette-choice="aurora"
-          >
-            <i></i>
-            Aurora
+          <button type="button" class="palette-option"
+            role="menuitemradio" aria-checked="false"
+            data-palette-choice="aurora">
+            <i></i> Aurora
           </button>
 
-          <button
-            type="button"
-            class="palette-option"
-            role="menuitemradio"
-            aria-checked="false"
-            data-palette-choice="violet"
-          >
-            <i></i>
-            Violet
+          <button type="button" class="palette-option"
+            role="menuitemradio" aria-checked="false"
+            data-palette-choice="violet">
+            <i></i> Violet
           </button>
 
-          <button
-            type="button"
-            class="palette-option"
-            role="menuitemradio"
-            aria-checked="false"
-            data-palette-choice="coral"
-          >
-            <i></i>
-            Coral
+          <button type="button" class="palette-option"
+            role="menuitemradio" aria-checked="false"
+            data-palette-choice="coral">
+            <i></i> Coral
           </button>
+
         </div>
       </div>
 
@@ -104,16 +92,22 @@
       >
         <span class="theme-icon">☼</span>
       </button>
+
     </div>
   </header>
 
+  <!-- MAIN -->
+
   <main class="page-main">
-    <section
-      class="contact-section section-wrap"
-      id="contact"
-    >
+
+    <section class="contact-section section-wrap" id="contact">
+
       <div class="contact-panel glass reveal">
+
+        <!-- CONTACT INFORMATION -->
+
         <div class="contact-copy">
+
           <p class="eyebrow">13 — CONTACT</p>
 
           <h2>
@@ -123,38 +117,82 @@
           </h2>
 
           <p>
-            I’m open to thoughtful conversations and opportunities.
-            Send a note and tell me what you’re working on.
+            I'm open to thoughtful conversations and opportunities.
+            Send a note and tell me what you're working on.
           </p>
 
           <div class="contact-direct">
+
             <span class="mono">EMAIL</span>
+
             <a
               class="editable"
-              href="mailto:your.email@example.com"
+              href="mailto:thedavinder039@gmail.com"
             >
-              [your.email@example.com] ↗
+              thedavinder039@gmail.com ↗
             </a>
+
           </div>
+
         </div>
+
+        <!-- CONTACT FORM -->
 
         <form
           class="contact-form"
           id="contact-form"
-          novalidate
+          action="https://formsubmit.co/thedavinder039@gmail.com"
+          method="POST"
         >
+
+          <!-- EMAIL SETTINGS -->
+
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Contact Message - Davinder Singh Portfolio"
+          >
+
+          <input
+            type="hidden"
+            name="_template"
+            value="table"
+          >
+
+          <input
+            type="hidden"
+            name="_captcha"
+            value="true"
+          >
+
+          <!-- HONEYPOT SPAM PROTECTION -->
+
+          <input
+            type="text"
+            name="_honey"
+            style="display:none"
+            tabindex="-1"
+            autocomplete="off"
+          >
+
+          <!-- NAME -->
+
           <label for="name">Your name</label>
+
           <input
             id="name"
             name="name"
+            type="text"
             autocomplete="name"
             placeholder="How should I address you?"
             required
             minlength="2"
           >
-          <small class="field-error" data-error="name"></small>
+
+          <!-- EMAIL -->
 
           <label for="email">Email address</label>
+
           <input
             id="email"
             name="email"
@@ -163,43 +201,51 @@
             placeholder="you@example.com"
             required
           >
-          <small class="field-error" data-error="email"></small>
+
+          <!-- PHONE -->
 
           <label for="phone">Phone number (optional)</label>
+
           <input
             id="phone"
             name="phone"
             type="tel"
             autocomplete="tel"
-            placeholder="[Your phone number]"
+            placeholder="Your phone number"
           >
-          <small class="field-error" data-error="phone"></small>
+
+          <!-- MESSAGE -->
 
           <label for="message">Message</label>
+
           <textarea
             id="message"
             name="message"
             rows="4"
-            placeholder="A little about what you have in mind…"
+            placeholder="A little about what you have in mind..."
             required
             minlength="10"
           ></textarea>
-          <small class="field-error" data-error="message"></small>
+
+          <!-- SUBMIT -->
 
           <button
             class="button button-primary form-submit"
             type="submit"
           >
-            Prepare email
+            Send Message
             <span>↗</span>
           </button>
 
+          <!-- WHATSAPP -->
+
           <a
             class="button whatsapp-button"
-            href="https://wa.me/YOUR_COUNTRY_CODE_AND_NUMBER?text=Hello%20Davinder%2C%20I%20found%20your%20portfolio."
+            href="https://wa.me/918264857198?text=Hello%20Davinder%2C%20I%20found%20your%20portfolio."
             target="_blank"
             rel="noopener noreferrer"
           >
+
             <svg
               class="whatsapp-mark"
               viewBox="0 0 24 24"
@@ -210,23 +256,28 @@
                 d="M20.52 3.48A11.86 11.86 0 0 0 12.08 0C5.5 0 .15 5.35.15 11.93c0 2.1.55 4.15 1.6 5.96L.05 24l6.27-1.64a11.9 11.9 0 0 0 5.75 1.47h.01c6.58 0 11.93-5.35 11.93-11.93 0-3.19-1.24-6.19-3.49-8.42ZM12.08 21.8h-.01a9.85 9.85 0 0 1-5.02-1.37l-.36-.21-3.72.98.99-3.63-.24-.37a9.87 9.87 0 0 1-1.52-5.27c0-5.45 4.44-9.89 9.9-9.89a9.82 9.82 0 0 1 7 2.9 9.82 9.82 0 0 1 2.9 7c0 5.45-4.44 9.89-9.92 9.89Zm5.43-7.41c-.3-.15-1.77-.87-2.05-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.18.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.88-.78-1.48-1.75-1.65-2.05-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.68-1.62-.93-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.48.71.31 1.26.5 1.69.64.71.22 1.35.19 1.86.11.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.42-.08-.12-.28-.2-.58-.35Z"
               />
             </svg>
+
             Chat on WhatsApp
             <span>↗</span>
+
           </a>
 
-          <p
-            class="form-note"
-            id="form-note"
-            aria-live="polite"
-          >
-            This opens your email app; no message is sent from this page.
+          <p class="form-note" id="form-note" aria-live="polite">
+            Your message will be sent directly to my email.
           </p>
+
         </form>
+
       </div>
 
+      <!-- SOCIAL LINKS -->
+
       <div class="social-links" aria-label="Social profiles">
+
+        <!-- GITHUB -->
+
         <a
-          href="https://github.com/YOUR_GITHUB_USERNAME"
+          href="https://github.com/thedavinder01"
           target="_blank"
           rel="noopener noreferrer"
           data-social="GitHub"
@@ -242,8 +293,10 @@
           <span>GitHub</span>
         </a>
 
+        <!-- LINKEDIN -->
+
         <a
-          href="https://www.linkedin.com/in/YOUR_LINKEDIN_ID/"
+          href="https://www.linkedin.com/in/davinder-singh-78123838b"
           target="_blank"
           rel="noopener noreferrer"
           data-social="LinkedIn"
@@ -259,10 +312,12 @@
           <span>LinkedIn</span>
         </a>
 
+        <!-- WHATSAPP -->
+
         <a
           class="social-whatsapp"
           data-social="WhatsApp"
-          href="https://wa.me/YOUR_COUNTRY_CODE_AND_NUMBER"
+          href="https://wa.me/918264857198"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="WhatsApp chat"
@@ -277,10 +332,12 @@
           <span>WhatsApp</span>
         </a>
 
+        <!-- EMAIL -->
+
         <a
           class="social-email"
           data-social="Email"
-          href="mailto:your.email@example.com"
+          href="mailto:thedavinder039@gmail.com"
           aria-label="Email Davinder"
           title="Email"
         >
@@ -293,8 +350,10 @@
           <span>Email</span>
         </a>
 
+        <!-- INSTAGRAM -->
+
         <a
-          href="https://www.instagram.com/YOUR_USERNAME/"
+          href="https://www.instagram.com/davinder_kainth06/"
           target="_blank"
           rel="noopener noreferrer"
           data-social="Instagram"
@@ -310,8 +369,10 @@
           <span>Instagram</span>
         </a>
 
+        <!-- YOUTUBE -->
+
         <a
-          href="https://www.youtube.com/@YOUR_CHANNEL"
+          href="https://www.youtube.com/@thedavinder_01"
           target="_blank"
           rel="noopener noreferrer"
           data-social="YouTube"
@@ -326,11 +387,17 @@
           </svg>
           <span>YouTube</span>
         </a>
+
       </div>
+
     </section>
+
   </main>
 
+  <!-- FOOTER -->
+
   <footer class="footer">
+
     <a class="brand" href="index.html">
       <span class="brand-mark">D<span>.</span></span>
       <span>DAVINDER SINGH</span>
@@ -341,141 +408,71 @@
       <span id="year"></span>
     </span>
 
-    <a href="#top" class="mono back-top">BACK TO TOP ↑</a>
+    <a href="#contact" class="mono back-top">
+      BACK TO TOP ↑
+    </a>
+
   </footer>
 
+  <!-- BOTTOM NAVIGATION -->
+
   <nav class="bottom-nav" aria-label="Main navigation">
-    <a
-      href="index.html"
-      class="nav-link"
-      data-page="home"
-      aria-label="Home"
-    >
-      <span>⌂</span>
-      <small>Home</small>
+
+    <a href="index.html" class="nav-link" data-page="home">
+      <span>⌂</span><small>Home</small>
     </a>
 
-    <a
-      href="about.html"
-      class="nav-link"
-      data-page="about"
-      aria-label="About"
-    >
-      <span>◉</span>
-      <small>About</small>
+    <a href="about.html" class="nav-link" data-page="about">
+      <span>◉</span><small>About</small>
     </a>
 
-    <a
-      href="skills.html"
-      class="nav-link"
-      data-page="skills"
-      aria-label="Skills"
-    >
-      <span>✳</span>
-      <small>Skills</small>
+    <a href="skills.html" class="nav-link" data-page="skills">
+      <span>✳</span><small>Skills</small>
     </a>
 
-    <a
-      href="projects.html"
-      class="nav-link"
-      data-page="projects"
-      aria-label="Projects"
-    >
-      <span>▦</span>
-      <small>Projects</small>
+    <a href="projects.html" class="nav-link" data-page="projects">
+      <span>▦</span><small>Projects</small>
     </a>
 
-    <a
-      href="services.html"
-      class="nav-link"
-      data-page="services"
-      aria-label="Services"
-    >
-      <span>✧</span>
-      <small>Services</small>
+    <a href="services.html" class="nav-link" data-page="services">
+      <span>✧</span><small>Services</small>
     </a>
 
-    <a
-      href="product.html"
-      class="nav-link"
-      data-page="product"
-      aria-label="Product"
-    >
-      <span>▣</span>
-      <small>Product</small>
+    <a href="product.html" class="nav-link" data-page="product">
+      <span>▣</span><small>Product</small>
     </a>
 
-    <a
-      href="experience.html"
-      class="nav-link"
-      data-page="experience"
-      aria-label="Experience"
-    >
-      <span>↗</span>
-      <small>Experience</small>
+    <a href="experience.html" class="nav-link" data-page="experience">
+      <span>↗</span><small>Experience</small>
     </a>
 
-    <a
-      href="internships.html"
-      class="nav-link"
-      data-page="internships"
-      aria-label="Internships"
-    >
-      <span>⌁</span>
-      <small>Internships</small>
+    <a href="internships.html" class="nav-link" data-page="internships">
+      <span>⌁</span><small>Internships</small>
     </a>
 
-    <a
-      href="education.html"
-      class="nav-link"
-      data-page="education"
-      aria-label="Education"
-    >
-      <span>⌑</span>
-      <small>Education</small>
+    <a href="education.html" class="nav-link" data-page="education">
+      <span>⌑</span><small>Education</small>
     </a>
 
-    <a
-      href="certifications.html"
-      class="nav-link"
-      data-page="certifications"
-      aria-label="Certs"
-    >
-      <span>◇</span>
-      <small>Certs</small>
+    <a href="certifications.html" class="nav-link" data-page="certifications">
+      <span>◇</span><small>Certs</small>
     </a>
 
-    <a
-      href="achievements.html"
-      class="nav-link"
-      data-page="achievements"
-      aria-label="Awards"
-    >
-      <span>✦</span>
-      <small>Awards</small>
+    <a href="achievements.html" class="nav-link" data-page="achievements">
+      <span>✦</span><small>Awards</small>
     </a>
 
-    <a
-      href="gallery.html"
-      class="nav-link"
-      data-page="gallery"
-      aria-label="Gallery"
-    >
-      <span>▧</span>
-      <small>Gallery</small>
+    <a href="gallery.html" class="nav-link" data-page="gallery">
+      <span>▧</span><small>Gallery</small>
     </a>
 
-    <a
-      href="contact.html"
-      class="nav-link"
-      data-page="contact"
-      aria-label="Contact"
-    >
-      <span>✉</span>
-      <small>Contact</small>
+    <a href="contact.html" class="nav-link" data-page="contact">
+      <span>✉</span><small>Contact</small>
     </a>
+
   </nav>
 
   <script src="js/main.js"></script>
+
 </body>
 </html>
