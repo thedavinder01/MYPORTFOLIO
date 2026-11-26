@@ -1,0 +1,381 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b12">
+  <meta name="description" content="Awards and achievements.">
+
+  <title>Achievements — Davinder Singh</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Achievement image styling */
+
+    .achievement-card .achievement-image-slot {
+      position: relative;
+      width: 100%;
+      height: 280px;
+      min-height: 280px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      box-sizing: border-box;
+      border-radius: 13px;
+      background: linear-gradient(135deg, #21102f, #41134e, #172c43);
+      border: 1px solid rgba(191, 111, 255, 0.35);
+    }
+
+    .achievement-card .achievement-image-slot img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      object-position: center;
+      border-radius: 8px;
+      transition: opacity 0.3s ease;
+    }
+
+    .achievement-image-slot.image-missing::before {
+      content: "ACHIEVEMENT IMAGE";
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-family: Manrope, sans-serif;
+      font-size: clamp(15px, 2vw, 27px);
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      background:
+        radial-gradient(circle at 75% 25%, rgba(226, 45, 183, 0.45) 0 22%, transparent 22.5%),
+        linear-gradient(120deg, #1b0b29, #51194f, #24102e);
+    }
+
+    .achievement-image-slot.image-missing img {
+      display: none;
+    }
+
+    .achievement-image-slot.image-missing::after {
+      content: "Achievement photo unavailable";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 58%;
+      text-align: center;
+      color: #d8c4eb;
+      font-size: 12px;
+      pointer-events: none;
+    }
+
+    .achievement-card h3 {
+      margin-top: 14px;
+    }
+
+    .achievement-card p {
+      line-height: 1.7;
+    }
+
+    @media (max-width: 600px) {
+      .achievement-card .achievement-image-slot {
+        height: 230px;
+        min-height: 230px;
+      }
+    }
+  </style>
+</head>
+
+<body data-page="achievements">
+
+  <a class="skip-link" href="#achievements">Skip to content</a>
+
+  <!-- HEADER -->
+
+  <header class="topbar">
+
+    <a class="brand" href="index.html" aria-label="Davinder Singh home">
+      <span class="brand-mark">D<span>.</span></span>
+      <span>DAVINDER SINGH</span>
+    </a>
+
+    <div class="top-actions">
+
+      <span class="availability">
+        <i></i>
+        OPEN TO OPPORTUNITIES
+      </span>
+
+      <div class="theme-picker">
+
+        <button
+          class="palette-toggle"
+          type="button"
+          aria-haspopup="menu"
+          aria-expanded="false"
+          aria-label="Choose colour theme"
+        >
+          <span class="palette-toggle-swatch"></span>
+          <span class="palette-current-name">Neon</span>
+          <span aria-hidden="true">⌄</span>
+        </button>
+
+        <div class="palette-menu" role="menu" hidden>
+
+          <button type="button" class="palette-option"
+            role="menuitemradio" aria-checked="false"
+            data-palette-choice="neon">
+            <i></i> Neon
+          </button>
+
+          <button type="button" class="palette-option"
+            role="menuitemradio" aria-checked="false"
+            data-palette-choice="aurora">
+            <i></i> Aurora
+          </button>
+
+          <button type="button" class="palette-option"
+            role="menuitemradio" aria-checked="false"
+            data-palette-choice="violet">
+            <i></i> Violet
+          </button>
+
+          <button type="button" class="palette-option"
+            role="menuitemradio" aria-checked="false"
+            data-palette-choice="coral">
+            <i></i> Coral
+          </button>
+
+        </div>
+      </div>
+
+      <button
+        class="theme-toggle icon-button"
+        type="button"
+        aria-label="Switch to light theme"
+        title="Switch light or dark mode"
+      >
+        <span class="theme-icon">☼</span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+
+  <main class="page-main">
+
+    <section class="content-section section-wrap" id="achievements">
+
+      <div class="section-heading reveal">
+
+        <p class="eyebrow">11 — ACHIEVEMENTS</p>
+
+        <h2>
+          Moments worth
+          <span class="gradient-text">sharing.</span>
+        </h2>
+
+        <p>
+          Recognition and achievements earned through
+          technical innovation and participation.
+        </p>
+
+      </div>
+
+      <div class="achievement-grid">
+
+        <!-- ACHIEVEMENT 1: INTERNAL HACKATHON 2025 -->
+
+        <article class="achievement-card glass reveal">
+
+          <div class="achievement-image-slot">
+
+            <img
+              id="achievement-image-1"
+              src="assets/images/award.jpeg"
+              alt="Internal Hackathon 2025 award"
+            >
+
+          </div>
+
+          <span class="achievement-icon">✦</span>
+
+          <span class="mono">2026</span>
+
+          <h3>Better Performance Award</h3>
+
+<p>
+  Recognized for outstanding performance and dedication
+  at Novem Controls Pvt. Ltd., Mohali.
+</p>
+        </article>
+
+        <!-- ACHIEVEMENT 2: TECH UTSAV 2024 -->
+
+        <article class="achievement-card glass reveal">
+
+          <div class="achievement-image-slot">
+
+            <img
+              id="achievement-image-2"
+              src="assets/images/college.jpeg"
+              alt="Internal Hackathon 2025 "
+            >
+
+          </div>
+
+          <span class="achievement-icon">↗</span>
+
+          <span class="mono">2024</span>
+
+          <h3>Internal Hackathon 2025</h3>
+
+          <p>
+            Received the Award of Excellence and secured
+            3rd Position in the Project Internal Hackathon 2025 at
+            Thapar Polytechnic College, Patiala.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    <a class="brand" href="index.html">
+      <span class="brand-mark">D<span>.</span></span>
+      <span>DAVINDER SINGH</span>
+    </a>
+
+    <span class="mono">
+     Made by Davinder Singh · © 2026 Davinder Singh. All rights reserved
+      <span id="year"></span>
+    </span>
+
+    <a href="#top" class="mono back-top">BACK TO TOP ↑</a>
+
+  </footer>
+
+  <!-- BOTTOM NAVIGATION -->
+
+  <nav class="bottom-nav" aria-label="Main navigation">
+
+    <a href="index.html" class="nav-link" data-page="home">
+      <span>⌂</span><small>Home</small>
+    </a>
+
+    <a href="about.html" class="nav-link" data-page="about">
+      <span>◉</span><small>About</small>
+    </a>
+
+    <a href="skills.html" class="nav-link" data-page="skills">
+      <span>✳</span><small>Skills</small>
+    </a>
+
+    <a href="projects.html" class="nav-link" data-page="projects">
+      <span>▦</span><small>Projects</small>
+    </a>
+
+    <a href="services.html" class="nav-link" data-page="services">
+      <span>✧</span><small>Services</small>
+    </a>
+
+    <a href="product.html" class="nav-link" data-page="product">
+      <span>▣</span><small>Product</small>
+    </a>
+
+    <a href="experience.html" class="nav-link" data-page="experience">
+      <span>↗</span><small>Experience</small>
+    </a>
+
+    <a href="internships.html" class="nav-link" data-page="internships">
+      <span>⌁</span><small>Internships</small>
+    </a>
+
+    <a href="education.html" class="nav-link" data-page="education">
+      <span>⌑</span><small>Education</small>
+    </a>
+
+    <a href="certifications.html" class="nav-link" data-page="certifications">
+      <span>◇</span><small>Certs</small>
+    </a>
+
+    <a href="achievements.html" class="nav-link" data-page="achievements">
+      <span>✦</span><small>Awards</small>
+    </a>
+
+    <a href="gallery.html" class="nav-link" data-page="gallery">
+      <span>▧</span><small>Gallery</small>
+    </a>
+
+    <a href="contact.html" class="nav-link" data-page="contact">
+      <span>✉</span><small>Contact</small>
+    </a>
+
+  </nav>
+
+  <!-- MAIN JAVASCRIPT -->
+
+  <script src="js/main.js"></script>
+
+  <!-- ACHIEVEMENT IMAGE CHECK -->
+
+  <script>
+    (() => {
+
+      const imageSlots = document.querySelectorAll(
+        '.achievement-image-slot'
+      );
+
+      imageSlots.forEach(slot => {
+
+        const image = slot.querySelector('img');
+
+        if (!image) return;
+
+        const checkImage = () => {
+          if (image.complete && image.naturalWidth > 0) {
+            slot.classList.remove('image-missing');
+          } else {
+            slot.classList.add('image-missing');
+          }
+        };
+
+        image.addEventListener('load', () => {
+          slot.classList.remove('image-missing');
+        });
+
+        image.addEventListener('error', () => {
+          slot.classList.add('image-missing');
+        });
+
+        checkImage();
+
+      });
+
+    })();
+  </script>
+
+</body>
+</html>
